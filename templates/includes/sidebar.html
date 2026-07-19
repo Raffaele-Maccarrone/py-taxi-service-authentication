@@ -3,7 +3,7 @@
     <p class="username">
       Welcome,
       <a href="{% url 'taxi:driver-detail' pk=user.id %}">
-        **{{ user.username }}**
+        <strong>{{ user.username }}</strong>
       </a>
     </p>
        <form action="{% url 'taxi:logout' %}" method="post" style="display: inline;">
@@ -15,7 +15,6 @@
   {% endif %}
 </div>
 <ul class="sidebar-nav">
-</div>
   <li><a href="{% url "taxi:index" %}">Home page</a></li>
   <li><a href="{% url "taxi:manufacturer-list" %}">Manufacturers</a></li>
   <li><a href="{% url "taxi:car-list" %}">Cars</a></li>
