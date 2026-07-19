@@ -115,7 +115,7 @@ class PrivateDriverTests(TestCase):
 
 class LogInTest(TestCase):
     def setUp(self):
-        self.credentials = {"username": "admin.user", "password": "pbkdf2_sha256$320000$6uM28XWOFX6ewyloJzjqmt$L+ZhofPylneoaL2iZS4sZu4ZMUNb4oIevfAdzOMn/eE="}
+        self.credentials = {"username": "admin.user", "password": "1qazcde3"}
 
     def test_login(self):
         response = self.client.post(reverse("login"), self.credentials, follow=True)
